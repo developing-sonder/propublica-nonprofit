@@ -1,0 +1,42 @@
+{
+    "name": "developing-sonder/propublica-nonprofit",
+    "description": "A PHP SDK for Propublica's Nonprofit Explorere",
+    "keywords": [
+        "developing-sonder",
+        "propublica-nonprofit"
+    ],
+    "homepage": "https://github.com/developing-sonder/propublica-nonprofit",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Matthew Moore",
+            "email": "admin@developingsonder.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DevelopingSonder\\PropublicaNonprofit\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DevelopingSonder\\PropublicaNonprofit\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
